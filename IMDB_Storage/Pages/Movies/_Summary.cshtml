@@ -1,0 +1,36 @@
+﻿@using IMDB_Storage.Core
+@model Movie
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>@Model.Title</h3>
+    </div>
+    <div class="panel-body">
+        <span>Rate: @Model.Rate</span>
+        <br>
+        <span>Description: @Model.Description</span>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-lg"
+           asp-page="./Detail"
+           asp-route-movieId="@Model.Id">
+            <i class="fas fa-search-plus"></i>
+        </a>
+        <a class="btn btn-lg"
+           asp-page="./Edit"
+           asp-route-movieId="@Model.Id">
+            <i class="fas fa-edit"></i>
+        </a>
+        <a class="btn btn-lg"
+           asp-page="./Delete"
+           asp-route-movieId="@Model.Id">
+            <i class="fas fa-trash-alt"></i>
+        </a>
+    </div>
+</div>
+
+@*<a class="btn btn-lg"
+   asp-page="./Delete"
+   asp-route-restaurantId="@Model.Id">
+    <i class="glyphicon glyphicon-trash"></i>
+</a>*@

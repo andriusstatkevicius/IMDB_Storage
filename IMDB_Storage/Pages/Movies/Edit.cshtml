@@ -1,0 +1,36 @@
+﻿@page "{movieId:int?}"
+@model IMDB_Storage.Pages.Movies.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Editing @Model.Movie.Title</h2>
+
+
+<form method="post">
+    <input type="hidden" asp-for="Movie.Id" />
+    <div class="form-group">
+        <label asp-for="Movie.Title"></label>
+        <input asp-for="Movie.Title" class="form-control" />
+        @*asp-validation-for will check Movie's title and display validation error if there are any*@
+        <span class="text-danger" asp-validation-for="Movie.Title"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Movie.Rate"></label>
+        <input asp-for="Movie.Rate" class="form-control" />
+        <span class="text-danger" asp-validation-for="Movie.Rate"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Movie.Description"></label>
+        <input asp-for="Movie.Description" class="form-control" />
+        <span class="text-danger" asp-validation-for="Movie.Description"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Movie.Genres"></label>
+        <select class="form-control" asp-for="GenresCheckBox"
+                asp-items="Model.Genres"></select>
+        <span class="text-danger" asp-validation-for="Movie.Genres"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

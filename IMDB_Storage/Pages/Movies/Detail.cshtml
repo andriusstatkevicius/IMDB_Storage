@@ -1,0 +1,30 @@
+﻿@page "{movieId:int}"
+@model IMDB_Storage.Pages.Movies.DetailModel
+@{
+    ViewData["Title"] = "Some shit here";
+}
+
+<h2>@Model.Movie.Title</h2>
+
+<div>
+    Id: @Model.Movie.Id
+</div>
+<div>
+    Title: @Model.Movie.Title
+</div>
+<div>
+    Genres:
+    <br />
+    @foreach (var genre in Model.Movie.Genres.Split(","))
+    {
+        @genre<br />
+    }
+    @*@Model.Movie.Genres*@
+</div>
+
+@if (Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
+
+<a asp-page="./List" class="btn btn-primary">All Movies</a>

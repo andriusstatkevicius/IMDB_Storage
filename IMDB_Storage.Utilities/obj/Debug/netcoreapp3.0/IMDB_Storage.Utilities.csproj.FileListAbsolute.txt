@@ -1,0 +1,12 @@
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\bin\Debug\netcoreapp3.0\IMDB_Storage.Utilities.deps.json
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\bin\Debug\netcoreapp3.0\IMDB_Storage.Utilities.dll
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\bin\Debug\netcoreapp3.0\IMDB_Storage.Utilities.pdb
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.AssemblyInfoInputs.cache
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.AssemblyInfo.cs
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.csproj.CoreCompileInputs.cache
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.dll
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.pdb
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.csprojAssemblyReference.cache
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\bin\Debug\netcoreapp3.0\IMDB_Storage.Core.dll
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\bin\Debug\netcoreapp3.0\IMDB_Storage.Core.pdb
+D:\Code\IMDB_Storage\IMDB_Storage.Utilities\obj\Debug\netcoreapp3.0\IMDB_Storage.Utilities.csproj.CopyComplete

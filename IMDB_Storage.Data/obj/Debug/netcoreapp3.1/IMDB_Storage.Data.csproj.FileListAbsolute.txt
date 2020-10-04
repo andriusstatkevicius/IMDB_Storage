@@ -1,0 +1,12 @@
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\bin\Debug\netcoreapp3.1\IMDB_Storage.Data.deps.json
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\bin\Debug\netcoreapp3.1\IMDB_Storage.Data.dll
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\bin\Debug\netcoreapp3.1\IMDB_Storage.Data.pdb
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\bin\Debug\netcoreapp3.1\IMDB_Storage.Core.dll
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\bin\Debug\netcoreapp3.1\IMDB_Storage.Core.pdb
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.csprojAssemblyReference.cache
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.AssemblyInfoInputs.cache
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.AssemblyInfo.cs
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.csproj.CoreCompileInputs.cache
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.csproj.CopyComplete
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.dll
+C:\Users\andri\source\repos\IMDB_Storage\IMDB_Storage.Data\obj\Debug\netcoreapp3.1\IMDB_Storage.Data.pdb

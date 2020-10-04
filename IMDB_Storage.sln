@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDB_Storage", "IMDB_Storage\IMDB_Storage.csproj", "{14E3122D-BB23-46EE-9995-D5798642E6D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDB_Storage.Core", "IMDB_Storage.Core\IMDB_Storage.Core.csproj", "{9E07AB4F-7C2B-42F2-B7F0-E0F412391054}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDB_Storage.Data", "IMDB_Storage.Data\IMDB_Storage.Data.csproj", "{A976A566-0C2A-4EEE-A1A4-1527092CE0E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB_Storage.Utilities", "IMDB_Storage.Utilities\IMDB_Storage.Utilities.csproj", "{AAB6FADC-86EE-4F30-B665-AA39B4FE0FAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E3122D-BB23-46EE-9995-D5798642E6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E3122D-BB23-46EE-9995-D5798642E6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E3122D-BB23-46EE-9995-D5798642E6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E3122D-BB23-46EE-9995-D5798642E6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E07AB4F-7C2B-42F2-B7F0-E0F412391054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E07AB4F-7C2B-42F2-B7F0-E0F412391054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E07AB4F-7C2B-42F2-B7F0-E0F412391054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E07AB4F-7C2B-42F2-B7F0-E0F412391054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A976A566-0C2A-4EEE-A1A4-1527092CE0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A976A566-0C2A-4EEE-A1A4-1527092CE0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A976A566-0C2A-4EEE-A1A4-1527092CE0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A976A566-0C2A-4EEE-A1A4-1527092CE0E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB6FADC-86EE-4F30-B665-AA39B4FE0FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB6FADC-86EE-4F30-B665-AA39B4FE0FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB6FADC-86EE-4F30-B665-AA39B4FE0FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB6FADC-86EE-4F30-B665-AA39B4FE0FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF4D25B9-A4B7-459B-98F7-5DD773E5B5CC}
+	EndGlobalSection
+EndGlobal

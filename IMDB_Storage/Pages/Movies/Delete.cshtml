@@ -1,0 +1,17 @@
+﻿@page "{movieId}"
+@model IMDB_Storage.Pages.Movies.DeleteModel
+@{
+    // when a layout file is not specified, ASP.NET core will always look for a file called "_ViewStart" which helps to render the page
+    // if some view is desired to be as a default view, it can be specified in the _ViewStart file
+    Layout = null; // can be defined what layout I want to use here
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete!</h2>
+<div class="alert alert-danger">
+    Are you sure you want to delete @Model._Movie.Title?
+</div>
+<form method="post">
+    <button type="submit" class="btn btn-danger">Yes!</button>
+    <a asp-page="./List" class="btn btn-primary">Cancel</a>
+</form>

@@ -1,0 +1,15 @@
+﻿@page
+@model IMDB_Storage.Pages.Movies.IMDBPopulateModel
+@{
+    ViewData["Title"] = "IMDB Populate";
+}
+
+<form method="post">
+    <h3>IMDB url:</h3>
+    <div class="input-group">
+        <input type="search" class="form-control" asp-for="_imdbLink" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Populate!</button>
+</form>
+<span class="text-danger" asp-validation-for="_imdbLink"></span>

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "IMDB_Storage.Data/1.0.0": {
+        "dependencies": {
+          "IMDB_Storage.Core": "1.0.0"
+        },
+        "runtime": {
+          "IMDB_Storage.Data.dll": {}
+        }
+      },
+      "IMDB_Storage.Core/1.0.0": {
+        "runtime": {
+          "IMDB_Storage.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IMDB_Storage.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IMDB_Storage.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
