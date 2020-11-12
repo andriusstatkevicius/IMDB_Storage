@@ -1,0 +1,44 @@
+﻿@page
+@model IMDB_Storage.Pages.Movies.ClientMoviesModel
+@{
+    ViewData["Title"] = "ClientMovies";
+}
+
+<h2>Client movies</h2>
+
+<table class="table" id="movies">
+</table>
+
+@section Scripts {
+
+    @*Serve up the files from the local source*@
+    <environment include="Development">
+        <script src="~/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.css" />
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js"></script>
+    </environment>
+
+
+    <script>
+        $(function () {
+
+            $.ajax("/api/movies/",
+                { method: "get" })
+                .then(function (response) {
+                    $("#movies").dataTable({
+                        data: response,
+                        columns: [
+                            { "data": "title" },
+                            { "data": "description" }
+                            { "data": "genres" }
+                        ]
+                    });
+                    //console.dir(response)
+                });
+        });
+    </script>
+}

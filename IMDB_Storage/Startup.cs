@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace IMDB_Storage
 {
@@ -25,6 +26,7 @@ namespace IMDB_Storage
 
             // allows to view changes in development mode
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            //services.AddControllers();
 
             // InMemoryData
             //services.AddSingleton<IMovieData, InMemoryMoviesData>();
@@ -62,13 +64,18 @@ namespace IMDB_Storage
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseNodeModules();
+            app.UseCookiePolicy();
+
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }

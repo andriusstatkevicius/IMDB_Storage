@@ -31,7 +31,7 @@ namespace IMDB_Storage.Pages.Movies
         public void OnGet()
         {
             _logger.LogError("Executing ListModel");
-            Message = _config["Message"];
+            //Message = _config["Message"];
             Movies = _movieData.GetMovieByName(SearchTerm);
         }
     }

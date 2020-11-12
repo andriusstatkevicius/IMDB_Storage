@@ -28,14 +28,15 @@ namespace IMDB_Storage.Pages.Movies
             return Page();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            Movie movie = PopulateMovieAsync().Result;
+            Movie movie = await PopulateMovieAsync();
+
             if (movie is null)
                 return Page();
 

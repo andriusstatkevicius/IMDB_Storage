@@ -3,6 +3,7 @@ using IMDB_Storage.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,9 +15,8 @@ namespace IMDB_Storage.Pages.Movies
         private readonly IHtmlHelper htmlHelper;
 
         [BindProperty] public Movie Movie { get; set; }
-        [BindProperty] public List<Genre> GenresCheckBox { get; set; }
-
-        public IEnumerable<SelectListItem> Genres { get; set; }
+        [BindProperty] public List<Selection> GenresSelection { get; set; }
+        [BindProperty] public bool IsSelected { get; set; }
 
         public EditModel(IMovieData movieData, IHtmlHelper htmlHelper)
         {
@@ -26,7 +26,10 @@ namespace IMDB_Storage.Pages.Movies
 
         public IActionResult OnGet(int? movieId)
         {
-            Genres = htmlHelper.GetEnumSelectList<Genre>();
+            GenresSelection = htmlHelper.GetEnumSelectList<Genre>()
+                                        .ToList()
+                                        .Select(x => new Selection { GenreValue = x.Text })
+                                        .ToList();
 
             if (movieId.HasValue)
                 Movie = movieData.GetById(movieId.Value);
@@ -44,11 +47,11 @@ namespace IMDB_Storage.Pages.Movies
             // If all the information is valid as per validation checks
             if (!ModelState.IsValid)
             {
-                Genres = htmlHelper.GetEnumSelectList<Genre>();
                 return Page();
             }
 
-            Movie.Genres = string.Join(",", GenresCheckBox);
+            Movie.Genres = string.Join(',', GenresSelection.Where(selection => selection.IsSelected)
+                                                           .Select(selection => Enum.Parse(typeof(Genre), selection.GenreValue)));
 
             if (Movie.Id > 0)
                 movieData.Update(Movie);

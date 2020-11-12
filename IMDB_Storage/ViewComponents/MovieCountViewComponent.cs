@@ -11,5 +11,11 @@ namespace IMDB_Storage.ViewComponents
         {
             _movieData = movieData;
         }
+
+        public IViewComponentResult Invoke()
+        {
+            var count = _movieData.GetMovieCount();
+            return View(count);
+        }
     }
 }

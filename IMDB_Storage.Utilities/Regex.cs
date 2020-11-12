@@ -29,7 +29,7 @@ namespace IMDB_Storage.Utilities
 
             return result;
         }
-
+         
         public static string[] TryGetArray(this MatchCollection input, int index, int groupIndex, bool isSingleArray = true)
         {
             string[] result;

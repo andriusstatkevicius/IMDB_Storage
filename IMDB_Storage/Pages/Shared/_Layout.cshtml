@@ -42,8 +42,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            @RenderSection("footer", required: false)
+            @*//Looks at the components and searches for the same name*@
+            @*The component is called by a view component*@
+            <vc:movie-count></vc:movie-count>
             @*I am going to allow other content pages to plug content into this section*@
+            @RenderSection("footer", required: false)
+
             &copy; 2020 - IMDB_Storage - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
